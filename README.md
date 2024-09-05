@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Ce dépôt contient le frontend d'une application de gestion de finances personnelles développée avec **React**. L'objectif est de créer une interface intuitive et réactive qui permet aux utilisateurs de gérer leurs transactions, de visualiser des données financières à l'aide de graphiques et de filtrer les transactions efficacement.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Utilisées
 
-## Available Scripts
+-   **React** : Framework pour la création d'interfaces utilisateur.
+-   **Chart.js** : Bibliothèque pour créer des graphiques interactifs et attrayants.
+- **Axios** : Utilisé pour effectuer des requêtes HTTP vers une API backend.
+-   **CSS** : Pour le style des composants et assurer une expérience utilisateur fluide.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+### Prérequis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Assurez-vous d'avoir installé les éléments suivants sur votre système :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   [Node.js](https://nodejs.org/) (version 14.x ou supérieure)
+-   [npm](https://www.npmjs.com/) (gestionnaire de paquets Node)
+- [Backend]([https://github.com/RejdaQATI/MoneyManagement.git](https://github.com/RejdaQATI/MoneyManagement.git)) de l'application pour installer et démarrer l'API.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Étapes
 
-### `npm run build`
+1.  Clonez le dépôt :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> git clone [https://github.com/RejdaQATI/MyBank](https://github.com/RejdaQATI/MyBank)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2.  Accédez au répertoire du projet :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> cd MyBank
 
-### `npm run eject`
+3.  Installez les dépendances :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5.  Démarrez le serveur de développement :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+L'application sera disponible à l'adresse `http://localhost:3000`.
 
-## Learn More
+## Fonctionnalités
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   **Gestion des Transactions** : Ajouter, visualiser et supprimer des transactions.
+-   **Visualisation des Données** : Intégration de **Chart.js** pour visualiser les données financières.
+- **Gestion des Utilisateurs** : Affichage, édition et suppression des utilisateurs.
