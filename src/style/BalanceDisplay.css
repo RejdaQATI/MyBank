@@ -1,0 +1,12 @@
+.balance-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem; /* Adjust spacing between blocks */
+}
+
+
+
+.balance-block h2, .balance-block h3 {
+    margin: 0;
+}

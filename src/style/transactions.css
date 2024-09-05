@@ -1,0 +1,101 @@
+/* src/style/transactions.css */
+
+.transactions-container {
+    padding: 20px;
+    background-color: #f6faff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    height: 630px; /* Adjust this height as per your layout */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px; /* Add some space below */
+}
+
+.transactions-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #00796b;
+}
+
+
+.transactions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction-item {
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #eff4ff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.transaction-details {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.transaction-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00796b;
+    margin-bottom: 5px;
+}
+
+/* Income in green and expenses in red */
+.transaction-amount.income {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2e7d32; /* Green for income */
+}
+
+.transaction-amount.expense {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e74c3c; /* Red for expense */
+}
+
+.transaction-description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.transaction-type {
+    font-size: 0.9em;
+    color: #004d40;
+}
+
+.transaction-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
