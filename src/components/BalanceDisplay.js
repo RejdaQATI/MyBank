@@ -1,7 +1,5 @@
-// BalanceDisplay.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../style/BalanceDisplay.css'; 
 
 const BalanceDisplay = () => {
     const [totalBalance, setTotalBalance] = useState(0);
@@ -14,7 +12,7 @@ const BalanceDisplay = () => {
             try {
                 const token = localStorage.getItem('token');
                 const config = {
-                    headers: { 'Authorization': `Bearer ${token}` },
+                    headers: { Authorization: `Bearer ${token}` },
                 };
 
                 const totalBalanceResponse = await axios.get('http://localhost:8000/api/total-balance', config);
@@ -45,20 +43,26 @@ const BalanceDisplay = () => {
     const formattedExpensesBalance = Number(expensesBalance).toFixed(2);
 
     return (
-        <div className="balance-container">
-            <div className="balance-block">
-                <h2>Total Balance: ${formattedTotalBalance}</h2>
+        <div className="flex flex-wrap  w-full px-5 md:space-x-4 space-y-2 md:space-y-0">
+            {/* Total Balance Card */}
+            <div className="w-full md:w-1/4 bg-gray-800 text-white rounded-lg shadow-lg p-6 text-center">
+                <h3 className="text-xl font-bold">Total Balance</h3>
+                <p className="text-2xl font-bold">${formattedTotalBalance}</p>
             </div>
-            <div className="balance-block">
-                <h2>Income: ${formattedIncomeBalance}</h2>
+
+            {/* Income Balance Card */}
+            <div className="w-full md:w-1/4 bg-gray-700 text-white rounded-lg shadow-lg p-6 text-center">
+                <h3 className="text-xl font-bold">Income Balance</h3>
+                <p className="text-2xl font-bold">${formattedIncomeBalance}</p>
             </div>
-            <div className="balance-block">
-                <h2>Expenses: ${formattedExpensesBalance}</h2>
+
+            {/* Expenses Balance Card */}
+            <div className="w-full md:w-1/4 bg-gray-600 text-white rounded-lg shadow-lg p-6 text-center">
+                <h3 className="text-xl font-bold">Expenses Balance</h3>
+                <p className="text-2xl font-bold">${formattedExpensesBalance}</p>
             </div>
         </div>
-
     );
 };
 
 export default BalanceDisplay;
-

@@ -41,6 +41,7 @@
     background-color: #f6faff;
     box-sizing: border-box;
     position: relative;
+    
 }
 
 .logout-button {
@@ -108,3 +109,16 @@ h2 {
 
     color: #00796b;
   }
+
+  .logo-container {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    z-index: 4;
+  }
+  
