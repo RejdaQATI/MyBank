@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Transactions from './pages/Transactions';
-import MyAccount from './pages/Myaccount';  // Assurez-vous que la casse correspond
+import MyAccount from './pages/Myaccount';  
 import Dashboard from './pages/Dashboard';
 import AddTransaction from './pages/AddTransaction';
 import Menu from './components/Menu';
@@ -14,14 +14,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Route pour le Dashboard */}
         <Route path="/dashboard" element={<Dashboard />} />
-
-        {/* Routes pour Login et Register, sans Menu */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
-        {/* Routes pour le reste de l'application avec Menu */}
         <Route element={<Menu />}>
           <Route path="/" element={<Home />} />
           <Route
